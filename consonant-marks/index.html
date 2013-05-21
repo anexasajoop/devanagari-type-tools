@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="style" type="text/css" href="../res/master.css" />
+    <link rel="stylesheet" type="text/css" href="../res/master.css" />
 
     <script type="text/javascript" src="../res/jq.js"></script>
     <script type="text/javascript" src="../res/character-set.js"></script>
@@ -8,21 +8,26 @@
   </head>
   <body>
 
-    <h1>Consonant Marks</h1>
-    <p>So here is the thing, alright?</p>
+    <header>
+      <h2><a href="#">Devanagari Type Tools</a> | Consonants with Vowel Signs</h2>
+    </header>
 
-    <form>
-      <fieldset>
-        <legend>Enter Information</legend>
+    <div id="wrapper">
+
+      <p>Use this tool to generate a test string that can list every consonant with every vowel sign (or <i>matra</i>). Optionally, add signs like <i>candrabindu</i>, <i>anusvara</i> and <i>visarga</i>, as well as the combining mark glyph for <i>reph</i> (Ra + <i>Virama</i>) to each combination.</p>
+
+     <!-- <form>
+      <fieldset> -->
+       <!-- <legend>Enter Information</legend> -->
 
         <label>
-          Enter Consonants
-          <a href="#" id="select_all_consonants">(Select all Consonants)</a>
+          Enter consonants
         </label><br>
-        <textarea id="consonants"></textarea><br><br>
+        <textarea id="consonants"></textarea><br>
+        <a href="#" id="select_all_consonants">(or select all)</a><br/><br>
 
         <label>
-          Select Vowels
+          Select vowel signs
           <a href="#" id="select_all_vowels">(Select all Vowels)</a>
         </label><br>
         <div id="all_dependent_vowels">
@@ -41,14 +46,16 @@
         <input type="button" value="Go Baby!" id="go_tool" />
         <input type="reset" value="Oh No Baby!" />
 
-      </fieldset>
-      <fieldset>
+      <!-- </fieldset>
+      <fieldset> -->
         <legend>Output</legend>
         <div id="tool_output">
           <p>Its coming!</p>
         </div>
-      </fieldset>
-    </form>
+      <!-- </fieldset>
+    </form> -->
+
+  </div>
 
   </body>
 </html>
