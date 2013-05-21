@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="style" type="text/css" href="../res/master.css" />
+
+    <script type="text/javascript" src="../res/jq.js"></script>
+    <script type="text/javascript" src="../res/character-set.js"></script>
+    <script type="text/javascript" src="half-forms.js"></script>
+  </head>
+  <body>
+
+    <h1>Half forms</h1>
+    <p>So here is the thing, alright?</p>
+
+    <form>
+      <fieldset>
+        <legend>Enter Information</legend>
+
+        <label>
+          kaunse aadhe bana liye?
+          <a href="#" id="select_all_consonants_for_half_made">(Select all Consonants)</a>
+        </label><br>
+        <textarea id="half_made"></textarea><br><br>
+
+        <label>
+          kiske again test?
+          <a href="#" id="select_all_consonants_for_test_against">(Select all Consonants)</a>
+        </label><br>
+        <textarea id="test_against"></textarea><br><br>
+
+
+
+        <input type="button" value="Go Baby!" id="go_tool" />
+        <input type="reset" value="Oh No Baby!" />
+
+      </fieldset>
+      <fieldset>
+        <legend>Output</legend>
+        <div id="tool_output">
+          <p>Its coming!</p>
+        </div>
+      </fieldset>
+    </form>
+
+  </body>
+</html>
