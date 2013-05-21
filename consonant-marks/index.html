@@ -15,28 +15,39 @@
       <fieldset>
         <legend>Enter Information</legend>
 
-        <label>Enter Consonants</label><br>
-        <textarea></textarea><br><br>
+        <label>
+          Enter Consonants
+          <a href="#" id="select_all_consonants">(Select all Consonants)</a>
+        </label><br>
+        <textarea id="consonants"></textarea><br><br>
 
-        <label>Select Vowels</label><br>
-        <input type="checkbox" value="a"/><label>A</label><br>
-        <input type="checkbox" value="a"/><label>Aa</label><br>
-        <input type="checkbox" value="a"/><label>E</label><br>
-        <input type="checkbox" value="a"/><label>Ee</label><br><br>
+        <label>
+          Select Vowels
+          <a href="#" id="select_all_vowels">(Select all Vowels)</a>
+        </label><br>
+        <input type="checkbox" class="vowels_option" value="a"/><label>A</label><br>
+        <input type="checkbox" class="vowels_option" value="a"/><label>Aa</label><br>
+        <input type="checkbox" class="vowels_option" value="a"/><label>E</label><br>
+        <input type="checkbox" class="vowels_option" value="a"/><label>Ee</label><br><br>
 
-        <label>Select Special Things</label><br>
-        <input type="checkbox" value="a"/><label>Un</label><br>
-        <input type="checkbox" value="a"/><label>An</label><br>
-        <input type="checkbox" value="a"/><label>Gr</label><br>
-        <input type="checkbox" value="a"/><label>Ah</label><br><br>
+        <label>
+          Select Various Signs
+          <a href="#" id="select_all_various_signs">(Select all Various Signs)</a>
+        </label><br>
+        <input type="checkbox" class="various_signs_option" value="a"/><label>Un</label><br>
+        <input type="checkbox" class="various_signs_option" value="a"/><label>An</label><br>
+        <input type="checkbox" class="various_signs_option" value="a"/><label>Gr</label><br>
+        <input type="checkbox" class="various_signs_option" value="a"/><label>Ah</label><br><br>
 
-        <input type="button" value="Go Baby!" />
-        <input type="button" value="Oh No Baby!" />
+        <input type="button" value="Go Baby!" id="go_tool" />
+        <input type="reset" value="Oh No Baby!" />
 
       </fieldset>
       <fieldset>
         <legend>Output</legend>
-        <p>Its coming!</p>
+        <div id="tool_output">
+          <p>Its coming!</p>
+        </div>
       </fieldset>
     </form>
 
