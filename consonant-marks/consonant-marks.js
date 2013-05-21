@@ -2,8 +2,8 @@ $(document).ready(function(e){
 
     $("#select_all_consonants").bind("click",function(e){
         var all = "" ;
-        for(var i = 0; i < consonants.length; i++){
-            all += consonants[i] + "" ;
+        for(var key in consonants){
+            all += consonants[key];
         };
         $("#consonants").val(all);
     });
