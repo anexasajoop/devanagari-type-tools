@@ -1,28 +1,28 @@
 var independent_vowels = {
-    "" : "\u0904", //Letter Short A
-    "" : "\u0905", //Letter A
-    "" : "\u0906", //Letter AA
-    "" : "\u0907", //Letter I
-    "" : "\u0908", //Letter II
-    "" : "\u0909", //Letter U
-    "" : "\u090A", //Letter UU
-    "" : "\u090B", //Letter Vocalic R
-    "" : "\u090C", //Letter Vocalic L
-    "" : "\u090D", //Letter Candra E
-    "" : "\u090E", //Letter Short E
-    "" : "\u090F", //Letter E
-    "" : "\u0910", //Letter AI
-    "" : "\u0911", //Letter Candra O
-    "" : "\u0912", //Letter Short O
-    "" : "\u0913", //Letter O
-    "" : "\u0914", //Letter AU
+    "short_a" : "\u0904", //Letter Short A
+    "a" : "\u0905", //Letter A
+    "aa" : "\u0906", //Letter AA
+    "i" : "\u0907", //Letter I
+    "ii" : "\u0908", //Letter II
+    "u" : "\u0909", //Letter U
+    "uu" : "\u090A", //Letter UU
+    "vocalic_r" : "\u090B", //Letter Vocalic R
+    "vocalic_l" : "\u090C", //Letter Vocalic L
+    "candra_e" : "\u090D", //Letter Candra E
+    "short_e" : "\u090E", //Letter Short E
+    "e" : "\u090F", //Letter E
+    "ai" : "\u0910", //Letter AI
+    "candra_o" : "\u0911", //Letter Candra O
+    "short_o" : "\u0912", //Letter Short O
+    "o" : "\u0913", //Letter O
+    "au" : "\u0914", //Letter AU
 
     //Additional vowels for Sanskrit
-    "" : "\u0960", //Letter Vocalic RR
-    "" : "\u0961", //Letter Vocalic LL
+    "vocalic_rr" : "\u0960", //Letter Vocalic RR
+    "vocalic_ll" : "\u0961", //Letter Vocalic LL
 
     //Independent vowel for Marathi
-    "" : "&3x0972" //Letter Candra A
+    "candra_a" : "&3x0972" //Letter Candra A
 };
 
 var consonants = {
@@ -30,78 +30,79 @@ var consonants = {
     "kha" : "\u0916", //Letter KHA
     "ga" : "\u0917", //Letter GA
     "gha" : "\u0918", //Letter GHA
-    "" : "\u0919", //Letter NGA
-    "" : "\u091A", //Letter CA
-    "" : "\u091B", //Letter CHA
-    "" : "\u091C", //Letter JA
-    "" : "\u091D", //Letter JHA
-    "" : "\u091E", //Letter NYA
-    "" : "\u091F", //Letter TTA
-    "" : "\u0920", //Letter TTHA
-    "" : "\u0921", //Letter DDA
-    "" : "\u0922", //Letter DDHA
-    "" : "\u0923", //Letter NNA
-    "" : "\u0924", //Letter TA
-    "" : "\u0925", //Letter THA
-    "" : "\u0926", //Letter DA
-    "" : "\u0927", //Letter DHA
-    "" : "\u0928", //Letter NA
-    "" : "\u0929", //Letter NNNA, NA with nukta
-    "" : "\u092A", //Letter PA
-    "" : "\u092B", //Letter PHA
-    "" : "\u092C", //Letter BA
-    "" : "\u092D", //Letter BHA
-    "" : "\u092E", //Letter MA
-    "" : "\u092F", //Letter YA
-    "" : "\u0930", //Letter RA
-    "" : "\u0931", //Letter RRA, RA with nukta
-    "" : "\u0932", //Letter LA
-    "" : "\u0933", //Letter LLA
-    "" : "\u0934", //Letter LLLA, LLA with nukta
-    "" : "\u0935", //Letter VA
-    "" : "\u0936", //Letter SHA
-    "" : "\u0937", //Letter SSA
-    "" : "\u0938", //Letter SA
-    "" : "\u0939", //Letter HA
+    "nga" : "\u0919", //Letter NGA
+    "ca" : "\u091A", //Letter CA
+    "cha" : "\u091B", //Letter CHA
+    "ja" : "\u091C", //Letter JA
+    "jha" : "\u091D", //Letter JHA
+    "nya" : "\u091E", //Letter NYA
+    "tta" : "\u091F", //Letter TTA
+    "ttha" : "\u0920", //Letter TTHA
+    "dda" : "\u0921", //Letter DDA
+    "ddha" : "\u0922", //Letter DDHA
+    "nna" : "\u0923", //Letter NNA
+    "ta" : "\u0924", //Letter TA
+    "tha" : "\u0925", //Letter THA
+    "da" : "\u0926", //Letter DA
+    "dha" : "\u0927", //Letter DHA
+    "na" : "\u0928", //Letter NA
+    "nnna" : "\u0929", //Letter NNNA, NA with nukta
+    "pa" : "\u092A", //Letter PA
+    "pha" : "\u092B", //Letter PHA
+    "ba" : "\u092C", //Letter BA
+    "bha" : "\u092D", //Letter BHA
+    "ma" : "\u092E", //Letter MA
+    "ya" : "\u092F", //Letter YA
+    "ra" : "\u0930", //Letter RA
+    "rra" : "\u0931", //Letter RRA, RA with nukta
+    "la" : "\u0932", //Letter LA
+    "lla" : "\u0933", //Letter LLA
+    "llla" : "\u0934", //Letter LLLA, LLA with nukta
+    "va" : "\u0935", //Letter VA
+    "sha" : "\u0936", //Letter SHA
+    "ssa" : "\u0937", //Letter SSA
+    "sa" : "\u0938", //Letter SA
+    "ha" : "\u0939", //Letter HA
 
     //Additional consonants
-    "" : "\u0958", //Letter QA, KA with nukta
-    "" : "\u0959", //Letter KHHA, KHA with nukta
-    "" : "\u095A", //Letter GA, LLA with nukta
-    "" : "\u095B", //Letter ZA, JA with nukta
-    "" : "\u095C", //Letter DDDHA, DDA with nukta
-    "" : "\u095D", //Letter RHA, DDHA with nukta
-    "" : "\u095E", //Letter FA, PHA with nukta
-    "" : "\u095F" //Letter YYA, YA with nukta
+    "qa" : "\u0958", //Letter QA, KA with nukta
+    "khha" : "\u0959", //Letter KHHA, KHA with nukta
+    "ghha" : "\u095A", //Letter GHHA, GA with nukta
+    "za" : "\u095B", //Letter ZA, JA with nukta
+    "dddha" : "\u095C", //Letter DDDHA, DDA with nukta
+    "rha" : "\u095D", //Letter RHA, DDHA with nukta
+    "fa" : "\u095E", //Letter FA, PHA with nukta
+    "yya" : "\u095F" //Letter YYA, YA with nukta
 };
 
 var dependent_vowels = {
-    "" : "\u093E", //Vowel Sign AA
-    "" : "\u093F", //Vowel Sign I
-    "" : "\u0940", //Vowel Sign II
-    "" : "\u0941", //Vowel Sign U
-    "" : "\u0942", //Vowel Sign UU
-    "" : "\u0943", //Vowel Sign Vocalic R
-    "" : "\u0944", //Vowel Sign Vocalic RR
-    "" : "\u0945", //Letter Candra E
-    "" : "\u0946", //Letter Short E
-    "" : "\u0947", //Letter E
-    "" : "\u0948", //Letter AI
-    "" : "\u0949", //Letter Candra O
-    "" : "\u094A", //Letter Short O
-    "" : "\u094B", //Letter O
-    "" : "\u094C", //Letter AU
+    "aa" : "\u093E", //Vowel Sign AA
+    "i" : "\u093F", //Vowel Sign I
+    "ii" : "\u0940", //Vowel Sign II
+    "u" : "\u0941", //Vowel Sign U
+    "uu" : "\u0942", //Vowel Sign UU
+    "vocalic_r" : "\u0943", //Vowel Sign Vocalic R
+    "vocalic_rr" : "\u0944", //Vowel Sign Vocalic RR
+    "candra_e" : "\u0945", //Vowel Sign Candra E
+    "short_e" : "\u0946", //Vowel Sign Short E
+    "e" : "\u0947", //Vowel Sign E
+    "ai" : "\u0948", //Vowel Sign AI
+    "candra_o" : "\u0949", //Vowel Sign Candra O
+    "short_o" : "\u094A", //Vowel Sign Short O
+    "o" : "\u094B", //Vowel Sign O
+    "au" : "\u094C", //Vowel Sign AU
 
     //Additional vowel signs for Sanskrit
-    "" : "\u0962", //Vowel Vocalic L
-    "" : "\u0963" //Vowel Vocalic LL
+    "vocalic_l" : "\u0962", //Vowel sign Vocalic L
+    "vocalic_ll" : "\u0963" //Vowel sign Vocalic LL
 };
 
 var various_signs = {
-    "" : "\u0901", //Sign Candrabindu
-    "" : "\u0902", //Sign Anusvara
-    "" : "\u0903", //Sign Visarga
-    "" : "\u094D" //Sign Virama
+    "candrabindu" : "\u0901", //Sign Candrabindu
+    "anusvara" : "\u0902", //Sign Anusvara
+    "visarga" : "\u0903" //Sign Visarga
 };
 
 var virama = "\u094D"; //Sign Virama (Halant)
+
+var reph= "\u0930\u094D"; //RA + Virama
