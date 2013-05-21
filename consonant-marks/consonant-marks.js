@@ -1,5 +1,23 @@
 $(document).ready(function(e){
 
+    // Putting all dependent vowels
+    for(var key in dependent_vowels){
+        var opt_html = '<input type="checkbox" ' +
+            'class="vowels_option" value="'+key+'" />' +
+            '<label>\u25cc'+dependent_vowels[key]+'</label><br>';
+        $("#all_dependent_vowels").append(opt_html);
+    }
+
+    // Putting all various signs
+    for(var key in various_signs){
+        var opt_html = '<input type="checkbox" ' +
+            'class="various_signs_option" value="'+key+'" />' +
+            '<label>\u25cc'+various_signs[key]+'</label><br>';
+        $("#all_various_signs").append(opt_html);
+    }
+
+
+    // Events
     $("#select_all_consonants").bind("click",function(e){
         var all = "" ;
         for(var key in consonants){
