@@ -1,5 +1,5 @@
 body {
-	background-color: #eee;
+	background-color: #f5f5f5;
 	margin: 0;
 	padding: 0;
 	font-family: Chaparral Pro;
@@ -13,23 +13,96 @@ header {
 	color: #fff;
 }
 
+/**********************
+SELECT/ENTER ALL LINKS
+***********************/
+
+a#select_all_consonants_for_half_made {
+	line-height: 2em; 
+	color: #777;
+	float: right;
+}
+
+a#select_all_consonants_for_test_against {
+	line-height: 2em; 
+	color: #777;
+	float: right;
+}
+
+a#select_all_consonants {
+	line-height: 2em; 
+	color: #777;
+	float: right;
+}
+
+
 header a {
 	text-decoration: none;
 	color: #fff;
 }
 
+header a:hover {
+	color: red;
+}
+
+textarea {
+	width: 750px; 
+	height: 70px; 
+	padding: 10px; 
+	font-size: 24px;
+}
+
 div#wrapper{
 	margin-left: 80px;
 	margin-top: 80px;
-	width: 850px;
+	width: 750px;
+}
+
+div#tool_output {
+	background-color: #fff;
+	width: 730px; 
+	/*height: 70px; */
+	padding: 10px; 
+	font-size: 24px;
+	margin-bottom: 80px;
+	border: 1px solid #888;
 }
 
 label {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 800;
 	font-family: Source Sans Pro;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;	
+	line-height: 2.25em;
+}
+
+
+div#all_dependent_vowels {
+	font-family: serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+div#all_various_signs {
+	font-family: serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+#go_tool {
+	font-size: 18px; 
+	font-family: Source Sans Pro; 
+	height: 2em; 
+	float: right; 
+	margin-left: 10px;"
+}
+
+#reset {
+	font-size: 18px; 
+	font-family: Source Sans Pro; 
+	height: 2em; 
+	float: right;
 }
 
 h2 {
@@ -37,8 +110,19 @@ h2 {
 	padding: 0;
 	font-size: 16px;
 	line-height: 2.75em;
-/*	letter-spacing: 0.04em;*/
-	font-weight: 200;
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 
 p {

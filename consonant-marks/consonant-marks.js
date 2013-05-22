@@ -4,7 +4,7 @@ $(document).ready(function(e){
     for(var key in dependent_vowels){
         var opt_html = '<input type="checkbox" ' +
             'class="vowels_option" value="'+key+'" />' +
-            '<label>\u25cc'+dependent_vowels[key]+'</label>&nbsp;&nbsp;&nbsp;';
+            '<span style = "color: #a6a6a6;">\u0935</span>'+dependent_vowels[key]+'&nbsp;&nbsp;&nbsp;';
         $("#all_dependent_vowels").append(opt_html);
     }
 
@@ -12,7 +12,7 @@ $(document).ready(function(e){
     for(var key in various_signs){
         var opt_html = '<input type="checkbox" ' +
             'class="various_signs_option" value="'+key+'" />' +
-            '<label>\u25cc'+various_signs[key]+'</label>&nbsp;&nbsp;&nbsp;';
+            '<span style = "color: #a6a6a6;">\u0935</span>'+various_signs[key]+'&nbsp;&nbsp;&nbsp;';
         $("#all_various_signs").append(opt_html);
     }
 

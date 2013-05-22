@@ -8,38 +8,60 @@
   </head>
   <body>
 
-    <h1>Half forms</h1>
-    <p>So here is the thing, alright?</p>
+    <header>
+      <h2><a href="#">Devanagari Type Tools</a> &nbsp; &#9656; &nbsp; Half forms and biconsonantal conjuncts</h2>
+    </header>
 
-    <form>
-      <fieldset>
-        <legend>Enter Information</legend>
+    <div id="wrapper">
 
-        <label>
-          kaunse aadhe bana liye?
-          <a href="#" id="select_all_consonants_for_half_made">(Select all Consonants)</a>
-        </label><br>
-        <textarea id="half_made"></textarea><br><br>
+     <p>Generate pairs of half forms followed by full consonants by entering the list of consonants whose half forms have been designed and the consonants that you want to test them against.</p>
 
-        <label>
-          kiske again test?
-          <a href="#" id="select_all_consonants_for_test_against">(Select all Consonants)</a>
-        </label><br>
-        <textarea id="test_against"></textarea><br><br>
+     <br/>
 
+     <!-- <form>
+        <fieldset>
+          <legend>Enter Information</legend> -->
 
+          <label>
+            Enter consonants with half-forms
+          </label><br>
+          <textarea id="half_made"></textarea><br/>
+          <a href="#"  id="select_all_consonants_for_half_made">or enter all</a>
 
-        <input type="button" value="Go Baby!" id="go_tool" />
-        <input type="reset" value="Oh No Baby!" />
+          <br/><br/>
 
-      </fieldset>
-      <fieldset>
-        <legend>Output</legend>
-        <div id="tool_output">
-          <p>Its coming!</p>
-        </div>
-      </fieldset>
-    </form>
+          <div style="clear:both">
+
+          <label>
+            Enter consonants to test against
+          </label><br>
+          <textarea id="test_against"></textarea><br/>
+          <a href="#" id="select_all_consonants_for_test_against">or enter all</a>
+
+          <div style="clear:both">
+
+          <br/><br/>
+
+          <input type="button" value="Submit" id="go_tool" />
+          
+          <input type="reset" value="Reset" id="reset"/>
+
+          <br/><br/><br/><br/><br/>
+
+        <!-- </fieldset>
+        <fieldset> -->
+
+          <div style="clear:both">
+
+          <!-- <legend>Output</legend> -->
+          <label>Output</label>
+          <div id="tool_output">
+            <h4>Nothing in, nothing out!</h4> 
+          </div>
+       <!-- </fieldset>
+      </form> -->
+
+    </div>
 
   </body>
 </html>
