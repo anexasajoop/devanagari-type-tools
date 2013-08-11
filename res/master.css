@@ -146,11 +146,11 @@ h3 {
 OUTPUT AREA
 ************/
 
-div#tool_output {
+#tool_output {
 	background-color: #fff;
-	width: 730px; 
-	/*height: 70px; */
-	padding: 10px; 
+	width: 730px;
+	height: 140px;
+	padding: 10px;
 	font-size: 24px;
 	margin-bottom: 80px;
 	border: 1px solid #888;

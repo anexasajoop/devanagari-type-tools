@@ -100,7 +100,7 @@ $(document).ready(function(e){
                 }
             }
 
-            $("#tool_output").append("<br><br>");
+            $("#tool_output").append("\n\n");
         }
     });
 

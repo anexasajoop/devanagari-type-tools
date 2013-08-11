@@ -31,7 +31,7 @@ $(document).ready(function(e){
             for(var j = 0; j < ta.length; j++){
                 html += hm[i] + virama + ta[j] + " ";
             }
-            html += "<br>";
+            html += "\n";
         }
         $("#tool_output").html(html);
     });
