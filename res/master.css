@@ -131,7 +131,7 @@ a#select_all_consonants_for_test_against {
 	float: right;
 }
 
-a#select_all_consonants {
+.small_link {
 	line-height: 2em; 
 	color: #777;
 	float: right;
